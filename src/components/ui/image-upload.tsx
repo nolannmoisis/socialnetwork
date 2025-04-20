@@ -26,7 +26,7 @@ function ImageUpload({ endpoint, onChange, value }: ImageUploadProps) {
   }
   return (
     <UploadDropzone
-      endpoint="imageUploader"
+      endpoint={endpoint}
       onClientUploadComplete={(res) => {
         onChange(res?.[0].url);
       }}

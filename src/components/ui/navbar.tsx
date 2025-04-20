@@ -17,7 +17,7 @@ async function Navbar() {
               SocialNetwork
             </Link>
           </div>
-        
+          
           <DesktopNavbar />
           <MobileNavbar />
         </div>
