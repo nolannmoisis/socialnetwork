@@ -121,7 +121,7 @@ export async function toggleLike(postId: string) {
                 data: {
                   type: "LIKE",
                   userId: post.authorId, 
-                  creatorId: userId, 
+                  creatorId: userId,
                   postId,
                 },
               }),
@@ -200,7 +200,7 @@ export async function deletePost(postId: string) {
       where: { id: postId },
     });
 
-    revalidatePath("/"); 
+    revalidatePath("/");
     return { success: true };
   } catch (error) {
     console.error("Failed to delete post:", error);
